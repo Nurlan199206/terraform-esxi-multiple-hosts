@@ -1,9 +1,10 @@
 #cloud-config
+hostname: srv-02
+fqdn: srv-02.example.com
 users:
-  - name: srv-02
+  - name: ubuntu
     sudo: ALL=(ALL) NOPASSWD:ALL
     lock_passwd: false
-    passwd: "$6$randomsalt$TP1RQj..." # Пароль в зашифрованном виде
     ssh-authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCIDANLZA0Q9YrictKCUj6R4d+/kf3ZvZFj2ZEBq9HHIMP0xluKCeQv4z7vbvZWFdfJ27c/UKin4+cC6UNMr86ZlFJTSLrmbY7wLWNada9xneBUCaNZE3BFP/c/dv1rygTkJqDmKUySKEIIMy4DrxTOqGZ00CNZ0sYfa7fnMh0Z8k+vVPk70g5HamaSzw0ElfAe3qQ1VxfEn0ZFpRpitmkbEd2bS6xCt7fCl+P5Fs9GVODsTCqe7D9O2KnRJaxRKdkAneQ1cvOsuDO1jryCgrxZRHv1SuqhD+bAD1z8ciJ2fP+JlKnpR0NVmE4Kykrin6eOwnjP2RUkttIoO3sOb0rZRoTdnaQnBuHSmfo2/kZrCWe/NtnEDe6E7fOMbkL/j72QCVWdcnJcRhcvlOwawGWPprrmfc2Z73Qz2ERQJHy1OKDKe+5zrhLE/6SRB1bOvCoNGVSkk/LMmLDwLhiJLdjjNIZ4cyjbFx8Qkrt0P5U1ewXBSQ8omyANQ6q3uVy8OEU= nurlan@WIN-3DJ38HKQ65I
     shell: /bin/bash
