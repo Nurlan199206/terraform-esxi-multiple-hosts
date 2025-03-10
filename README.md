@@ -1,7 +1,9 @@
-### terraform
+### terraform deploy ESXi Standalone
 
 
 Данный проект создает две виртуальные машины и запускает их
+
+
 
 ## Virtual Machines (VM)
 
@@ -11,7 +13,8 @@
 | srv-02  | 192.168.200.152 |
 
 
-Software version:
+***Software version:***
+
 
 ```
 ESXi: 8.0.3
