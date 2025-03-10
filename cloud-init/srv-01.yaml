@@ -19,6 +19,7 @@ packages:
   - curl
   - net-tools
   - htop
+  - mc
 
 write_files:
   - path: /etc/netplan/50-cloud-init.yaml
