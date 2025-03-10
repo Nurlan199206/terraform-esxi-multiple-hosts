@@ -45,9 +45,9 @@ resource "vsphere_virtual_machine" "vm_remote_ova" {
   datastore_id         = data.vsphere_datastore.datastore.id
   host_system_id       = data.vsphere_host.host.id
   resource_pool_id     = data.vsphere_resource_pool.pool.id
-  num_cpus             = 1
-  num_cores_per_socket = 2
-  memory               = 2048
+  num_cpus             = var.num_cpus
+  num_cores_per_socket = var.num_cores_per_socket
+  memory               = var.memory
   guest_id             = data.vsphere_ovf_vm_template.ovfRemote.guest_id
   firmware             = data.vsphere_ovf_vm_template.ovfRemote.firmware
   scsi_type            = data.vsphere_ovf_vm_template.ovfRemote.scsi_type
