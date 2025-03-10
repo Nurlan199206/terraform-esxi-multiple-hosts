@@ -9,7 +9,7 @@ terraform {
 
 provider "vsphere" {
   user                 = "root"
-  password             = "galamat2025@"
+  password             = "pass"
   vsphere_server       = "192.168.200.17"
   allow_unverified_ssl  = true
   api_timeout          = 10
